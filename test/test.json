@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "Goku",
+    "poder": 15000
+  },
+  {
+    "nombre": "Vegeta",
+    "poder": 13000
+  },
+  {
+    "nombre": "Krillin",
+    "poder": 8000
+  }
+]
