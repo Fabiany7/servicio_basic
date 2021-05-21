@@ -7,17 +7,20 @@ app.post('/consultarReporteXFiltros', function (req, res) {
   console.log("consultarReporteXFiltros");
   console.log("numpag " + numpag);
   if (numpag === '1') {
-    const rawdata = fs.readFileSync('7560820562/cotizante.json');
+    const rawdata = fs.readFileSync('7551279761/cotizante.json');
     const student = JSON.parse(rawdata);
     res.json(student);
   } else {
-    res.status(500);
+    const rawdata = fs.readFileSync('7551279761/cotizante.json');
+    const student = JSON.parse(rawdata);
+    res.status(500).json(student);
+    //res.status(500);
   }
 });
 
 app.get('/consultarPlanillasEsp', function (req, res) {
   console.log("consultarPlanillasEsp");
-  const rawdata = fs.readFileSync('test/test.json');
+  const rawdata = fs.readFileSync('7551279761/planilla.json');
   const student = JSON.parse(rawdata);
   res.json(student);
 });
